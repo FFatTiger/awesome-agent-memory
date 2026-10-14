@@ -20,15 +20,15 @@ Contributions welcome. Please keep entries factual and free of marketing languag
 - [GoodMem](https://goodmem.ai) - Memory layer for agentic AI with owners, roles, scoped API keys and retrieval logging, multi-modal hybrid search with reranking, available as a managed cloud or self-hosted, with SDKs in Python, TypeScript, Java, .NET and Go.
 - [Marvnor](https://wendelxia.github.io/marvnor/) - Proprietary hosted API that stores facts as source, relation and target records and answers structured questions against them as TRUE, FALSE or UNKNOWN, flagging conflicting values, with in-place correction and targeted deletion.
 - [Mem0](https://github.com/mem0ai/mem0) - Open-source (Apache-2.0) memory layer that extracts facts from conversations, plus a managed cloud, with many framework integrations.
-- [Mnemoverse](https://mnemoverse.com) - Persistent memory API for AI agents over MCP. Scores importance on write, strengthens associations between concepts (Hebbian), and re-ranks recall from outcome feedback. MIT client, managed engine.
+- [Mnemoverse](https://mnemoverse.com) - Managed memory engine for AI agents over MCP, with shared rooms (beta), an MIT local stdio MCP server using an API key, and a remote MCP endpoint with OAuth; rating a recalled memory as helpful or misleading re-ranks what comes back next.
 - [Supermemory](https://github.com/supermemoryai/supermemory) - Memory and context API for AI apps and agents, with fact extraction, user profiles, connectors, and hybrid vector-plus-keyword retrieval.
-- [Zep](https://www.getzep.com/) - Managed memory service built on a temporal knowledge graph (open-source Graphiti engine), offered as cloud, BYOK, and self-hosted deployments.
+- [Zep](https://www.getzep.com/) - Managed memory service built on a temporal knowledge graph (open-source Graphiti engine), offered as cloud, BYOK, and BYOC deployments.
 
 ## Open-source frameworks and engines
 
 - [birkin-mnemosyne](https://github.com/ashmoonori-afk/birkin-mnemosyne) - MIT local Markdown memory for agents with multilingual BM25 recall that handles Hangul and CJK, usage-based decay, and an optional MCP server; the core has no runtime dependencies.
 - [chamnan](https://github.com/ArcticFox2029/chamnan) - MIT repository-local memory for coding agents that stores an architecture index, an impact map, session records, and decisions as markdown committed beside the code, retrieved by keyword and injected at session start. Python standard library only, no network at runtime.
-- [Cognee](https://github.com/topoteretes/cognee) - Apache-2.0 memory framework that builds a self-hosted knowledge graph via an extract-cognify-load pipeline combining vector and graph retrieval.
+- [Cognee](https://github.com/topoteretes/cognee) - Apache-2.0 memory framework that turns documents, code, and conversations into a self-hosted knowledge graph, where a remember operation stores content and a recall operation retrieves graph, vector, or code context, with a managed option (Cognee Cloud).
 - [Dory](https://github.com/tjqscott/dory) - MIT project-memory tool for coding agents, using a linked Markdown wiki with decisions, findings, and tasks, plus Claude Code hooks for session-start loading and structural linting.
 - [Graphiti](https://github.com/getzep/graphiti) - Apache-2.0 engine building real-time, bi-temporal knowledge graphs from conversational and structured data, with hybrid semantic, keyword, and graph retrieval (powers Zep).
 - [Hindsight](https://github.com/vectorize-io/hindsight) - MIT agent-memory system running four parallel retrieval strategies per query: semantic search, BM25 keyword matching, graph traversal, and temporal reasoning.
@@ -50,7 +50,7 @@ Contributions welcome. Please keep entries factual and free of marketing languag
 
 Memory servers exposed through the Model Context Protocol. Client support depends on the server transport and authentication method.
 
-- [Basic Memory](https://github.com/basicmachines-co/basic-memory) - Local-first, AGPL-3.0 MCP server that stores agent memory as Obsidian-compatible Markdown files, building a knowledge graph agents can read and write.
+- [Basic Memory](https://github.com/basicmachines-co/basic-memory) - Local-first, AGPL-3.0 MCP server that stores agent memory as Obsidian-compatible Markdown files, building a knowledge graph agents can read and write, plus an optional hosted version (Basic Memory Cloud).
 - [BrainTube](https://github.com/lildaddyo/braintube-mcp) - Hosted, read-write MCP memory server (Elastic License 2.0) over a personal library of YouTube transcripts, podcasts, articles, PDFs and notes, with OAuth or API-key auth over Streamable HTTP.
 - [fidelis](https://github.com/hermes-labs-ai/fidelis) - Apache-2.0, local-first agent memory for Claude Code over MCP: local vector recall by default with an explicit keyword+vector hybrid mode, no generative LLM in retrieval, no cloud at runtime.
 - [Firekeep](https://github.com/kapella-hub/FirekeepHQ) - BUSL-1.1 self-hosted MCP operating layer that shares durable knowledge, working state, cooperative coordination leases, and replay evidence across Claude Code, Codex, Kiro, and OpenCode.
@@ -58,7 +58,6 @@ Memory servers exposed through the Model Context Protocol. Client support depend
 - [Hyperconsciousness](https://github.com/louis030195/hyperconsciousness) - MIT-licensed developer-alpha knowledge store with encrypted, append-only records and MCP retrieval through scoped, expiring grants.
 - [Memento](https://mementoagi.com) - Hosted MCP memory for coding agents with editable Markdown records, team-shared context, and a web dashboard.
 - [Mnemoverse](https://github.com/mnemoverse/mcp-memory-server) - Hosted persistent memory with an MIT local stdio MCP server using an API key, plus a remote HTTP MCP endpoint with OAuth for compatible clients.
-- [OpenMemory](https://github.com/mem0ai/mem0/tree/main/openmemory) - Local-first, private MCP memory server (part of the Mem0 project).
 - [ReasonGraph Cloud](https://memory.primaxiom.ai) - Hosted graph memory over Streamable HTTP MCP with API-key auth; tools for remembering facts, discovering connections, tracing causes and effects and what-if queries.
 - [Screenpipe](https://github.com/screenpipe/screenpipe) - MCP server for searching screen text and audio transcripts captured by a running Screenpipe instance, with source available under the Screenpipe Commercial License.
 - [Selvedge](https://github.com/masondelan/selvedge) - MIT-licensed local stdio MCP server and CLI that stores coding decisions, reasons, and rejected approaches in SQLite for retrieval across agent sessions.
@@ -81,7 +80,7 @@ Common suites used to evaluate agent memory.
 - [HippoRAG: Neurobiologically Inspired Long-Term Memory for LLMs](https://arxiv.org/abs/2405.14831) - Combines knowledge graphs with Personalized PageRank, inspired by hippocampal indexing, for long-term retrieval (NeurIPS 2024).
 - [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) - Virtual context management (the origin of Letta).
 - [MemoryBank: Enhancing LLMs with Long-Term Memory](https://arxiv.org/abs/2305.10250) - Long-term memory via an Ebbinghaus-inspired forgetting curve and event summarization (2023).
-- [SLoD: Semantic Level of Detail for Knowledge Graphs](https://arxiv.org/abs/2603.08965) - Discovering abstraction boundaries via spectral heat diffusion over hyperbolic embeddings (Mnemoverse).
+- [Semantic Level of Detail for Knowledge Graphs: Discovering Abstraction Boundaries via Spectral Heat Diffusion](https://arxiv.org/abs/2603.08965) - Introduces SLoD, a continuous zoom operator built from heat-kernel diffusion on a graph Laplacian induced by a Poincaré-ball (hyperbolic) embedding (Mnemoverse).
 - [Zep: A Temporal Knowledge Graph Architecture for Agent Memory](https://arxiv.org/abs/2501.13956) - Describes the Graphiti temporal knowledge-graph engine for agent memory, with retrieval-benchmark evaluation (2025).
 
 ## Contributing
