@@ -56,6 +56,7 @@ Memory servers exposed through the Model Context Protocol. Client support depend
 - [Firekeep](https://github.com/kapella-hub/FirekeepHQ) - BUSL-1.1 self-hosted MCP operating layer that shares durable knowledge, working state, cooperative coordination leases, and replay evidence across Claude Code, Codex, Kiro, and OpenCode.
 - [Graphmem](https://github.com/sonic182/graphmem) - Local-first, MIT-licensed MCP server giving Claude Code, Codex, OpenCode, and pi a shared SQLite memory store with local semantic search and linked entities, plus optional code navigation tools.
 - [Hyperconsciousness](https://github.com/louis030195/hyperconsciousness) - MIT-licensed developer-alpha knowledge store with encrypted, append-only records and MCP retrieval through scoped, expiring grants.
+- [Mem0 MCP](https://docs.mem0.ai/platform/mem0-mcp) - Hosted MCP server for the Mem0 Platform, reached over HTTPS with browser sign-in or an API key as a bearer token; memories are stored in the user's Mem0 account.
 - [Memento](https://mementoagi.com) - Hosted MCP memory for coding agents with editable Markdown records, team-shared context, and a web dashboard.
 - [Mnemoverse](https://github.com/mnemoverse/mcp-memory-server) - Hosted persistent memory with an MIT local stdio MCP server using an API key, plus a remote HTTP MCP endpoint with OAuth for compatible clients.
 - [OpenMemory](https://github.com/mem0ai/mem0/tree/main/openmemory) - Local-first, private MCP memory server (part of the Mem0 project).
