@@ -79,6 +79,7 @@ Common suites used to evaluate agent memory.
 - [A-MEM: Agentic Memory for LLM Agents](https://arxiv.org/abs/2502.12110) - Organizes agent notes via Zettelkasten-style linking and evolution for dynamic retrieval (NeurIPS 2025).
 - [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) - Introduces a memory stream with reflection and retrieval to simulate believable behavior (UIST 2023).
 - [HippoRAG: Neurobiologically Inspired Long-Term Memory for LLMs](https://arxiv.org/abs/2405.14831) - Combines knowledge graphs with Personalized PageRank, inspired by hippocampal indexing, for long-term retrieval (NeurIPS 2024).
+- [Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory](https://arxiv.org/abs/2504.19413) - Memory architecture that extracts, consolidates, and retrieves salient information from ongoing conversations, with a graph-based variant, evaluated on LoCoMo (2025).
 - [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) - Virtual context management (the origin of Letta).
 - [MemoryBank: Enhancing LLMs with Long-Term Memory](https://arxiv.org/abs/2305.10250) - Long-term memory via an Ebbinghaus-inspired forgetting curve and event summarization (2023).
 - [SLoD: Semantic Level of Detail for Knowledge Graphs](https://arxiv.org/abs/2603.08965) - Discovering abstraction boundaries via spectral heat diffusion over hyperbolic embeddings (Mnemoverse).
